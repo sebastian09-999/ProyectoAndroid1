@@ -1,3 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">prevenapp</string>
+    <string name="app_name">PrevenApp</string>
+    <string name="subtitulo_espacio">Mi Espacio</string>
+    <string name="nav_inicio">Inicio</string>
+    <string name="nav_servicios">Servicios</string>
+    <string name="nav_mis_citas">Mis Citas</string>
+    <string name="nav_recursos">Recursos</string>
+    <string name="nav_asistente">Asistente Virtual</string>
+    <string name="nav_mi_perfil">Mi Perfil</string>
+    <string name="nav_cerrar_sesion">Cerrar Sesión</string>
+    <string name="search_hint">Buscar recursos, servicios…</string>
+    <string name="welcome_title">¡Hola!</string>
+    <string name="welcome_subtitle">Este es tu espacio seguro. ¿Con qué te gustaría empezar hoy?</string>
+    <string name="label_proximas_citas">Próximas Citas</string>
+    <string name="label_favoritos">Favoritos</string>
+    <string name="section_menu">Menú de navegación</string>
+    <string name="section_que_necesitas">¿Qué necesitas hoy?</string>
+    <string name="quick_ayuda_title">Buscar Ayuda</string>
+    <string name="quick_ayuda_desc">Encuentra servicios de salud y líneas de apoyo.</string>
+    <string name="quick_aprender_title">Aprender</string>
+    <string name="quick_aprender_desc">Lee artículos y guías sobre tu salud.</string>
+    <string name="quick_asistente_title">Hablar con el Asistente</string>
+    <string name="quick_asistente_desc">Resuelve tus dudas de forma anónima 24/7.</string>
+    <string name="servicios_title">Servicios Disponibles</string>
+    <string name="servicios_subtitle">Explora orientación, acompañamiento y apoyo preventivo.</string>
+    <string name="servicio_orientacion_titulo">Orientación y Bienestar</string>
+    <string name="servicio_orientacion_desc">Acompañamiento inicial y rutas de atención preventiva.</string>
+    <string name="servicio_apoyo_titulo">Líneas y Centros de Apoyo</string>
+    <string name="servicio_apoyo_desc">Consulta contactos y espacios disponibles para agendar.</string>
+    <string name="btn_ver_servicio">Ver servicio</string>
 </resources>
