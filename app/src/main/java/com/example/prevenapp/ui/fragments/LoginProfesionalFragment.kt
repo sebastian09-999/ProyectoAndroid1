@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import android.content.Intent
+import com.example.prevenapp.MainActivity
 import com.example.prevenapp.R
 import com.example.prevenapp.databinding.FragmentLoginProfesionalBinding
 
@@ -31,7 +33,9 @@ class LoginProfesionalFragment : Fragment(R.layout.fragment_login_profesional) {
         }
 
         binding.btnIniciarSesion.setOnClickListener {
-            findNavController().popBackStack()
+            val intent = Intent(requireContext(), MainActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
         }
 
         binding.btnAtras.setOnClickListener {

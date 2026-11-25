@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 import androidx.core.view.GravityCompat
+import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,7 +41,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_tips -> replaceFragment(PlaceholderFragment.newInstance("Publicar Tips"))
                 R.id.nav_reportes -> replaceFragment(PlaceholderFragment.newInstance("Reportes"))
                 R.id.nav_recursos -> replaceFragment(RecursosFragment())
-                R.id.nav_perfil -> replaceFragment(PlaceholderFragment.newInstance("Mi Perfil"))
+                R.id.nav_perfil -> {
+                    val intent = Intent(this, PerfilActivity::class.java)
+                    startActivity(intent)
+                }
             }
             // Cerrar el menú después de hacer clic
             drawerLayout.closeDrawer(GravityCompat.START)

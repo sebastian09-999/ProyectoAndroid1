@@ -40,7 +40,8 @@ class RegisterFragment : Fragment(R.layout.fragment_register) {
                 val bundle = bundleOf("errorMessage" to "Por favor completa todos los campos obligatorios")
                 findNavController().navigate(R.id.action_register_to_error, bundle)
             } else {
-                findNavController().navigate(R.id.action_register_to_success)
+                val bundle = bundleOf("nombreUsuario" to nombres)
+                findNavController().navigate(R.id.action_register_to_success, bundle)
             }
         }
     }
