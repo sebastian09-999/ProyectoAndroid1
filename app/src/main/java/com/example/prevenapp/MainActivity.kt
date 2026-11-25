@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_chat -> replaceFragment(SalasChatFragment())
                 R.id.nav_tips -> replaceFragment(PlaceholderFragment.newInstance("Publicar Tips"))
                 R.id.nav_reportes -> replaceFragment(PlaceholderFragment.newInstance("Reportes"))
-                R.id.nav_recursos -> replaceFragment(PlaceholderFragment.newInstance("Recursos"))
+                R.id.nav_recursos -> replaceFragment(RecursosFragment())
                 R.id.nav_perfil -> replaceFragment(PlaceholderFragment.newInstance("Mi Perfil"))
             }
             // Cerrar el menú después de hacer clic

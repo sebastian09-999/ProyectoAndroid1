@@ -1,18 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Original Colors -->
     <color name="primary">#4F46E5</color>
     <color name="primary_light">#EEF2FF</color>
     <color name="bg_main">#F3F4F6</color>
     <color name="text_dark">#1F2937</color>
     <color name="text_light">#6B7280</color>
-    <color name="white">#FFFFFF</color>
     <color name="purple_primary">#5B3FD3</color>
     <color name="purple_dark">#3F29A8</color>
     <color name="purple_soft">#EFEBFD</color>
     <color name="bg_light">#F6F7FB</color>
-    <color name="surface_white">#FFFFFF</color>
-    <color name="text_primary">#1E1B2E</color>
-    <color name="text_secondary">#6B687D</color>
     <color name="accent_rose">#E84A7F</color>
     <color name="border_subtle">#E4E2F0</color>
+
+    <!-- Brand PrevenApp Colors -->
+    <color name="primary_blue">#2563EB</color>
+    <color name="primary_blue_dark">#1D4ED8</color>
+    <color name="primary_blue_light">#EFF6FF</color>
+    <color name="primary_blue_border">#BFDBFE</color>
+
+    <!-- Secondary & Accent Colors -->
+    <color name="teal_accent">#0EA5E9</color>
+    <color name="teal_light">#E0F2FE</color>
+
+    <!-- Status / Category Colors -->
+    <color name="category_pdf_text">#2563EB</color>
+    <color name="category_pdf_bg">#EFF6FF</color>
+    <color name="category_pdf_border">#DBEAFE</color>
+
+    <!-- Video Purple -->
+    <color name="category_video_text">#7C3AED</color>
+    <color name="category_video_bg">#F3E8FF</color>
+    <color name="category_video_border">#E9D5FF</color>
+
+    <!-- Article Green -->
+    <color name="category_article_text">#059669</color>
+    <color name="category_article_bg">#ECFDF5</color>
+    <color name="category_article_border">#A7F3D0</color>
+
+    <!-- Infographic Amber -->
+    <color name="category_infographic_text">#D97706</color>
+    <color name="category_infographic_bg">#FFFBEB</color>
+    <color name="category_infographic_border">#FDE68A</color>
+
+    <!-- Verified Badge Green -->
+    <color name="verified_green_text">#15803D</color>
+    <color name="verified_green_bg">#DCFCE7</color>
+    <color name="verified_green_border">#86EFAC</color>
+
+    <!-- Neutral Slate Palette -->
+    <color name="background_slate">#F8FAFC</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_muted">#94A3B8</color>
+    <color name="border_slate">#E2E8F0</color>
+    <color name="input_stroke">#CBD5E1</color>
+    <color name="input_bg">#F8FAFC</color>
 </resources>
