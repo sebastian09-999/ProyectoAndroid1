@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F7"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formulario de registro"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Los campos con  *  son obligatorios"
+                    android:textColor="#555555"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4dp" />
+
+                <!-- Nombres -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Nombres:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp" />
+
+                <EditText
+                    android:id="@+id/etNombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="María"
+                    android:text="María"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <!-- Apellidos -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Apellidos:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etApellidos"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Campo"
+                    android:text="Campo"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <!-- Correo -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Correo:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etCorreo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="maria@gmail.com"
+                    android:text="maria@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <!-- Teléfono -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Teléfono:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="11111"
+                    android:text="11111"
+                    android:inputType="phone"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <!-- RH -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*RH:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etRH"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="A+"
+                    android:text="A+"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <!-- Contraseña -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*Contraseña:"
+                    android:textColor="#333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etContrasena"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="12345A.1910"
+                    android:text="12345A.1910"
+                    android:inputType="textPassword"
+                    android:textSize="14sp"
+                    android:paddingHorizontal="12dp"
+                    android:singleLine="true" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirmar"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="Confirmar"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="#4C75FF"
+                    app:cornerRadius="14dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

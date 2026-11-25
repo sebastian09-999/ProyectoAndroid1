@@ -1,4 +1,4 @@
-package com.example.proyectoprevenapp
+package com.example.prevenapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -22,7 +22,7 @@ class ServiciosActivity : AppCompatActivity() {
         }
 
         btnVolverInicio.setOnClickListener {
-            val intent = Intent(this, DashboardUsuarioActivity::class.java)
+            val intent = Intent(this@ServiciosActivity, DashboardUsuarioActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
             finish()
