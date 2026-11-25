@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_usuario_inicio"
+            android:icon="@android:drawable/ic_menu_compass"
+            android:title="@string/nav_inicio" />
+
+        <item
+            android:id="@+id/nav_usuario_servicios"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/nav_servicios" />
+
+        <item
+            android:id="@+id/nav_usuario_citas"
+            android:icon="@android:drawable/ic_menu_my_calendar"
+            android:title="@string/nav_mis_citas" />
+
+        <item
+            android:id="@+id/nav_usuario_recursos"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/nav_recursos" />
+
+        <item
+            android:id="@+id/nav_usuario_asistente"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="@string/nav_asistente" />
+
+        <item
+            android:id="@+id/nav_usuario_perfil"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="@string/nav_mi_perfil" />
+    </group>
+
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_usuario_cerrar_sesion"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/nav_cerrar_sesion" />
+        </menu>
+    </item>
+
+</menu>
