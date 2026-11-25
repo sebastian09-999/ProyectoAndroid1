@@ -1,4 +1,4 @@
-package com.example.proyectoprevenapp
+package com.example.prevenapp
 
 import android.content.Intent
 import android.os.Bundle
@@ -46,7 +46,7 @@ class DashboardUsuarioActivity : AppCompatActivity() {
 
         // --- NAVEGACIÓN A TU MÓDULO DE SERVICIOS ---
         val abrirServicios = {
-            startActivity(Intent(this, ServiciosActivity::class.java))
+            startActivity(Intent(this@DashboardUsuarioActivity, ServiciosActivity::class.java))
         }
         btnMenuServicios.setOnClickListener { abrirServicios() }
         btnNavServicios.setOnClickListener { abrirServicios() }
@@ -90,7 +90,7 @@ class DashboardUsuarioActivity : AppCompatActivity() {
         etBuscar.setOnEditorActionListener { _, _, _ ->
             val consulta = etBuscar.text.toString().trim()
             if (consulta.isNotEmpty()) {
-                val intent = Intent(this, ServiciosActivity::class.java)
+                val intent = Intent(this@DashboardUsuarioActivity, ServiciosActivity::class.java)
                 intent.putExtra("FILTRO_SERVICIO", consulta)
                 startActivity(intent)
             }
