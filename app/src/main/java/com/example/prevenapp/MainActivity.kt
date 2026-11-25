@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.nav_resumen -> replaceFragment(ResumenFragment())
                 R.id.nav_horarios -> replaceFragment(MisHorariosFragment())
-                R.id.nav_chat -> replaceFragment(PlaceholderFragment.newInstance("Salas de Chat"))
+                R.id.nav_chat -> replaceFragment(SalasChatFragment())
                 R.id.nav_tips -> replaceFragment(PlaceholderFragment.newInstance("Publicar Tips"))
                 R.id.nav_reportes -> replaceFragment(PlaceholderFragment.newInstance("Reportes"))
                 R.id.nav_recursos -> replaceFragment(PlaceholderFragment.newInstance("Recursos"))
