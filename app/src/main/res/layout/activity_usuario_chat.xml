@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFC"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp">
+
+        <Button
+            android:id="@+id/btnVolverChat"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="← Volver"
+            android:textSize="12sp"
+            android:background="#E2E8F0"
+            android:textColor="#0F172A"
+            android:paddingHorizontal="12dp"
+            android:layout_marginEnd="10dp" />
+
+        <TextView
+            android:id="@+id/tvTituloCanal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chat Personal con Profesional"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvEstadoConfidencial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversación privada y confidencial"
+        android:textSize="12sp"
+        android:textColor="#475569"
+        android:paddingBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvBloqueoAnonimoChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEF3C7"
+        android:textColor="#92400E"
+        android:padding="10dp"
+        android:text="Modo anónimo: Inicia sesión para acceder a chats personales con profesionales."
+        android:visibility="gone"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <Button
+            android:id="@+id/btnCanalPrivado"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Chat Personal"
+            android:textSize="13sp"
+            android:background="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btnCanalSalas"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Salas Grupales"
+            android:textSize="13sp"
+            android:background="#0D9488"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMensajes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingVertical="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp">
+
+        <EditText
+            android:id="@+id/etMensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escribe tu mensaje..."
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:background="@android:drawable/edit_text"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="Enviar"
+            android:background="#1D4ED8"
+            android:textColor="#FFFFFF"
+            android:paddingHorizontal="16dp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+</LinearLayout>
