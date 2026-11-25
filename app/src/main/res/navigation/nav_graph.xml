@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.prevenapp.ui.fragments.WelcomeFragment"
+        android:label="Welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_welcome_to_loginProfesional"
+            app:destination="@id/loginProfesionalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.prevenapp.ui.fragments.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_register_to_success"
+            app:destination="@id/registerSuccessFragment" />
+        <action
+            android:id="@+id/action_register_to_error"
+            app:destination="@id/registerErrorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerSuccessFragment"
+        android:name="com.example.prevenapp.ui.fragments.RegisterSuccessFragment"
+        android:label="Register Success"
+        tools:layout="@layout/fragment_register_success">
+        <action
+            android:id="@+id/action_registerSuccess_to_welcome"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerErrorFragment"
+        android:name="com.example.prevenapp.ui.fragments.RegisterErrorFragment"
+        android:label="Register Error"
+        tools:layout="@layout/fragment_register_error">
+        <argument
+            android:name="errorMessage"
+            app:argType="string"
+            android:defaultValue="Para crear la cuenta debes llenar el campo RH" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginProfesionalFragment"
+        android:name="com.example.prevenapp.ui.fragments.LoginProfesionalFragment"
+        android:label="Login Profesional"
+        tools:layout="@layout/fragment_login_profesional">
+        <action
+            android:id="@+id/action_login_to_recoveryEmail"
+            app:destination="@id/passwordRecoveryEmailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordRecoveryEmailFragment"
+        android:name="com.example.prevenapp.ui.fragments.PasswordRecoveryEmailFragment"
+        android:label="Recovery Email"
+        tools:layout="@layout/fragment_password_recovery_email">
+        <action
+            android:id="@+id/action_recoveryEmail_to_code"
+            app:destination="@id/passwordRecoveryCodeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordRecoveryCodeFragment"
+        android:name="com.example.prevenapp.ui.fragments.PasswordRecoveryCodeFragment"
+        android:label="Recovery Code"
+        tools:layout="@layout/fragment_password_recovery_code">
+        <action
+            android:id="@+id/action_recoveryCode_to_newPass"
+            app:destination="@id/passwordRecoveryNewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordRecoveryNewFragment"
+        android:name="com.example.prevenapp.ui.fragments.PasswordRecoveryNewFragment"
+        android:label="Recovery New Pass"
+        tools:layout="@layout/fragment_password_recovery_new">
+        <action
+            android:id="@+id/action_recoveryNew_to_success"
+            app:destination="@id/passwordRecoverySuccessFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/passwordRecoverySuccessFragment"
+        android:name="com.example.prevenapp.ui.fragments.PasswordRecoverySuccessFragment"
+        android:label="Recovery Success"
+        tools:layout="@layout/fragment_password_recovery_success">
+        <action
+            android:id="@+id/action_recoverySuccess_to_welcome"
+            app:destination="@id/welcomeFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
