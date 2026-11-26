@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F5FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Banner superior -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5E4AE3"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvTituloCitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agendar Cita"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Espacio de prevención, bienestar y apoyo psicológico. Elige el motivo, fecha y hora que prefieras."
+                android:textColor="#EAE5FF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Tarjeta 1: Motivo (psicológico / prevención) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo de la consulta"
+                android:textColor="#231942"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Instrucción reubicada antes de los botones -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Toca una opción de prevención o apoyo psicológico, o escribe el tuyo:"
+                android:textColor="#6C6A75"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMotivoPsico"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EFEAFE"
+                    android:minHeight="48dp"
+                    android:text="Apoyo psicológico"
+                    android:textColor="#5E4AE3"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnMotivoPrev"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EFEAFE"
+                    android:minHeight="48dp"
+                    android:text="Prevención salud"
+                    android:textColor="#5E4AE3"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnMotivoEstres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#EFEAFE"
+                android:minHeight="48dp"
+                android:text="Manejo de estrés y ansiedad"
+                android:textColor="#5E4AE3"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/etMotivoCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F7F5FC"
+                android:gravity="top|start"
+                android:hint="Ej. Orientación psicológica o chequeo preventivo..."
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minLines="2"
+                android:padding="12dp"
+                android:textColor="#231942"
+                android:textColorHint="#8E8CA0"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Tarjeta 2: Fecha y hora -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha y hora disponibles"
+                android:textColor="#231942"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Puedes escoger cualquier fecha y cualquier hora (se sincronizará con la agenda médica):"
+                android:textColor="#6C6A75"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnElegirFecha"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EAE6FF"
+                    android:minHeight="48dp"
+                    android:text="Elegir fecha"
+                    android:textColor="#4A35D6" />
+
+                <Button
+                    android:id="@+id/btnElegirHora"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#EAE6FF"
+                    android:minHeight="48dp"
+                    android:text="Elegir hora"
+                    android:textColor="#4A35D6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvFechaSeleccionada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Fecha: Por seleccionar"
+                android:textColor="#231942"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvHoraSeleccionada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Hora: Por seleccionar"
+                android:textColor="#231942"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Botón principal Separar cita -->
+        <Button
+            android:id="@+id/btnSepararCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#5E4AE3"
+            android:minHeight="52dp"
+            android:padding="14dp"
+            android:text="Separar cita"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Tarjeta de confirmación -->
+        <LinearLayout
+            android:id="@+id/layoutConfirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmación de la cita"
+                android:textColor="#5E4AE3"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvConfirmacionCita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Completa el motivo, selecciona fecha y hora, y pulsa «Separar cita» para ver los detalles de tu clínica y confirmación."
+                android:textColor="#4A4855"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

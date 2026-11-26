@@ -13,7 +13,11 @@
         android:theme="@style/Theme.Prevenapp">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" />
+        <activity
+            android:name=".CitasActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
